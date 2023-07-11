@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sales analysis</title>
+</head>
+<body style="background-color:silver">
+<h1 style="background-color:yellow;font-size:30px;text-align:center">SALES REPORT ANALYSIS</h1>
+<form action="/predict" method="POST">
+    <label for="Source" >Source</label>
+    <input type="text" name="Source" id="Source" placeholder="source">
+    <label for="Sales_Agent">Sales_Agent</label>
+    <input type="text" name="Sales_Agent" id="Sales_Agent">
+    <label for="Delivery_Mode">Delivery_Mode</label>
+    <input type="text" name="Delivery_Mode" id="Delivery_Mode">
+    <label for="Location ">Location </label>
+    <input type="text" name="Location " id="Location "><br><br>
+    <div>
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year">
+        <label for="month">Month</label>
+        <input type="text" name="month" id="month">
+    </div><br>
+    <div>
+        <input type="submit" name="predict"><br>
+        predict :{{result}}
+    </div>
+</form>
+</body>
+</html>
